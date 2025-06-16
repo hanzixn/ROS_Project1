@@ -9,23 +9,17 @@ cd ~/catkin_ws/
 catkin_make
 
 设置工作空间环境变量：
-echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc  
-
-source ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc    
+source ~/.bashrc 
 
 创建ROS包：
-cd ~/catkin_ws/src  
-
+cd ~/catkin_ws/src    
 catkin_create_pkg turtle_control rospy geometry_msgs turtlesim
 
-创建scripts目录并编写代码：  
-
-mkdir -p ~/catkin_ws/src/turtle_control/scripts  
-
-cd ~/catkin_ws/src/turtle_control/scripts  
-
+创建scripts目录并编写代码：    
+mkdir -p ~/catkin_ws/src/turtle_control/scripts    
+cd ~/catkin_ws/src/turtle_control/scripts    
 gedit turtle_controller.py
-
 
 给脚本添加可执行权限：
 chmod +x turtle_controller.py
