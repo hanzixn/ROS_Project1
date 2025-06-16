@@ -9,16 +9,21 @@ cd ~/catkin_ws/
 catkin_make
 
 设置工作空间环境变量：
-echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc  
+
 source ~/.bashrc
 
 创建ROS包：
-cd ~/catkin_ws/src
+cd ~/catkin_ws/src  
+
 catkin_create_pkg turtle_control rospy geometry_msgs turtlesim
 
-创建scripts目录并编写代码：
-mkdir -p ~/catkin_ws/src/turtle_control/scripts
-cd ~/catkin_ws/src/turtle_control/scripts
+创建scripts目录并编写代码：  
+
+mkdir -p ~/catkin_ws/src/turtle_control/scripts  
+
+cd ~/catkin_ws/src/turtle_control/scripts  
+
 gedit turtle_controller.py
 
 
@@ -30,8 +35,8 @@ cd ~/catkin_ws
 catkin_make
 
 运行实验：
-终端1 - 运行ROS核心服务：
-roscore
+终端1 - 运行ROS核心服务：  
+roscore  
 终端2 - 运行turtlesim仿真器：  
 rosrun turtlesim turtlesim_node
 终端3 - 运行控制器节点：  
