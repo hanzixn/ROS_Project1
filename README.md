@@ -32,7 +32,7 @@ catkin_make
 终端1 - 运行ROS核心服务：  
 roscore  
 终端2 - 运行turtlesim仿真器：  
-rosrun turtlesim turtlesim_node
+rosrun turtlesim turtlesim_node   
 终端3 - 运行控制器节点：  
 cd ~/catkin_ws  
 source devel/setup.bash    
